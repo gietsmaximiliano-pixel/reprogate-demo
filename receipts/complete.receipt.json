@@ -1,0 +1,40 @@
+{
+  "receiptFormatVersion": "0.1",
+  "validatedAt": "2026-06-01T19:20:00.000Z",
+  "cliVersion": "0.1.0",
+  "manifestHash": "b238cbc0177226a4a5260131fa9f4f9c77afe56dcb81759b7856f97b06c06efc",
+  "manifest": {
+    "schemaVersion": "0.1",
+    "reportType": "bug",
+    "projectName": "reprogate-demo-widget",
+    "affectedVersion": "1.2.3",
+    "summary": "Widget save button drops the last character when submitting a title",
+    "createdAt": "2026-06-01T00:00:00.000Z"
+  },
+  "validation": {
+    "valid": true,
+    "missingFields": [],
+    "invalidFields": [],
+    "evidence": []
+  },
+  "actionability": {
+    "score": 93,
+    "reasons": [
+      "+5: Supported schema version is present.",
+      "+4: Report type is bug.",
+      "+6: Project name and affected version are present.",
+      "+6: Operating system is described.",
+      "+5: Runtime information is included.",
+      "+6: Relevant dependency versions are listed.",
+      "+10: Summary is specific enough to be useful.",
+      "+8: Expected behavior is stated.",
+      "+8: Actual behavior is stated.",
+      "+16: Reproduction steps are detailed.",
+      "+8: Reporter supplied reproduction commands.",
+      "+4: Redaction notes are provided.",
+      "+7: Reporter says they manually reviewed and understood the report.",
+      "0: Reporter says no AI assistance was used."
+    ]
+  },
+  "receiptHash": "c5bc91aa1ae588108797baf1f18e9fb4de13720645ac959a91c5b4d176aa2ca0"
+}
