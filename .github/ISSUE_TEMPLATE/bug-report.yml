@@ -1,0 +1,41 @@
+name: Bug report with ReproGate evidence
+description: Report a reproducible bug with structured evidence.
+title: "[Bug]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste a ReproGate Evidence Manifest in the fenced block below.
+        ReproGate validates evidence quality, not AI authorship.
+  - type: textarea
+    id: reprogate
+    attributes:
+      label: ReproGate Evidence Manifest
+      description: Replace placeholder values before submitting.
+      value: |
+        ```reprogate
+        schemaVersion: "0.1"
+        reportType: bug
+        projectName: demo-project
+        affectedVersion: 0.0.0
+        environment:
+          os: Ubuntu 24.04
+          runtime: Node.js 20
+          dependencies:
+            demo-project: 0.0.0
+        summary: "Specific one-sentence summary of the failure"
+        expectedBehavior: "What should happen"
+        actualBehavior: "What happens instead"
+        stepsToReproduce:
+          - First deterministic step
+          - Second deterministic step
+        commands:
+          - npm test
+        redactionNotes: "No secrets or tokens included."
+        aiAssisted: false
+        humanReviewed: true
+        createdAt: "2026-06-01T00:00:00.000Z"
+        ```
+    validations:
+      required: true

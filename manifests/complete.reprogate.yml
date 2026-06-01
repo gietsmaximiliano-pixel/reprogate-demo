@@ -1,0 +1,23 @@
+schemaVersion: "0.1"
+reportType: bug
+projectName: reprogate-demo-widget
+affectedVersion: 1.2.3
+environment:
+  os: Ubuntu 24.04
+  runtime: Node.js 20.20.2
+  dependencies:
+    reprogate-demo-widget: 1.2.3
+summary: Widget save button drops the last character when submitting a title
+expectedBehavior: Saving the title "Release demo" should persist the full string unchanged.
+actualBehavior: Saving the title "Release demo" persists "Release dem" and drops the final character.
+stepsToReproduce:
+  - Open the widget editor on version 1.2.3.
+  - Enter "Release demo" in the title field.
+  - Click Save and reload the page.
+  - Observe that the saved title is missing the final character.
+commands:
+  - npm test
+redactionNotes: No secrets, tokens, cookies, or personal data are included.
+aiAssisted: false
+humanReviewed: true
+createdAt: "2026-06-01T00:00:00.000Z"
